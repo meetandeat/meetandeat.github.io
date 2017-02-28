@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+@font-face {
+    font-family: 'Berlin Sans FB Demi Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Berlin Sans FB Demi Bold'), url('../fonts/BRLNSDB.woff') format('woff');
+}
+
+
+body {
+    background-color: #e6e6e6;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Berlin Sans FB Demi Bold', sans-serif;
+}
+h3.primary-color {
+  color: #FF993B;
+}
+
+a {
+    color: #FF993B;
+}
+
+.toTop.show {
+    opacity: 0.65;
+}
+
+.toTop:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.toTop {
+    background-color: rgba(63, 63, 63, 0.7);
+    border-radius: 6px;
+    bottom: 3rem;
+    color: #222222;
+    font-size: 2.5rem;
+    height: 3rem;
+    position: fixed;
+    right: 2.25rem;
+    width: 3rem;
+    opacity: 0;
+    transition: all 1s linear;
+}
+
+.toTop i {
+    bottom: 5px;
+    left: 12px;
+    position: absolute;
+}
+
+.navi-toTop:hover {
+    cursor: pointer;
+}
+
+.event {
+    height: 250px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 3px solid #FF993B;
+    padding: 30px;
+
+    position: absolute;
+    top: 20%;
+    right: 20%;
+
+    color: #fafafa;
+
+    font-family: 'Berlin Sans FB Demi Bold', sans-serif;
+    font-size: 1.6rem;
+}
+
+.event p {
+    padding: 0.5rem 2rem;
+}
+
+.event h1 {
+    color: #FF993B;
+}
+
+.event .facebook {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+}
+
+.top-bar,
+.top-bar ul {
+    background-color: white;
+}
+
+.top-bar {
+    box-shadow: 0 5px 15px black;
+    z-index: 9999;
+}
+
+.stage {
+    height: 500px;
+    background-image: url('../img/background.png');
+    position: relative;
+}
+
+.full.headline {
+    height: 90px;
+    padding: 10px;
+}
+
+.headline-about {
+    color: #FF993B;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid black;
+    top: -90px;
+    position: relative;
+    margin-bottom: -40px;
+}
+
+.headline-reservation {
+    background: #FF993B;
+    color: #0a0a0a;
+}
+
+.headline-facebook {
+    background-color: #2A69AE;
+    color: #FFFFFF;
+}
+
+.headline-footer {
+    background-color: #e6e6e6;
+    color: #0a0a0a;
+}
+
+.map {
+    max-width: 1825px;
+    height: 400px;
+}
+
+.full.gallery {
+    background-color: #fafafa;
+}
+
+footer .footer-links {
+    background-color: #fafafa;
+}
+
+button.button {
+    font-family: 'Raleway', sans-serif;
+}
+
+.button.read-more,
+.button.read-less {
+    float: right;
+    width: 180px;
+}
+
+.image-container {
+    overflow: hidden;
+    height: 500px;
+}
+
+#image-slider img {
+    width: 100%;
+}
+
+#image-slider .slider-controls {
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+#map iframe {
+    pointer-events: none;
+}
+
+#map iframe.clicked {
+    pointer-events: auto;
+}
