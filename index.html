@@ -9,8 +9,9 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script src="https://vuejs.org/js/vue.js"></script>
-    <script src="https://unpkg.com/vue-i18n@5.0.0/dist/vue-i18n.min.js"></script>
+    <script src="js/vendor/vue.js"></script>
+    <script src="js/vendor/vue-i18n.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
   </head>
   <body>
   <div id="app">
@@ -19,7 +20,7 @@
         <div class="row">
           <div class="top-bar-left">
             <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text navi-toTop">Meet & Eat</li>
+              <li class="navi-toTop"><img class="logo" src="img/logo.svg" title="Meet & Eat"></li>
             </ul>
           </div>
           <div class="top-bar-right">
@@ -38,8 +39,8 @@
       <div class="event">
         <h1>{{ $t('stage.upcoming_event') }}</h1>
         <p>
-          Persian Dinner<br/>
-          Friday, February 17th
+          {{ latestEvent.title | translateKey }}<br/>
+          {{ latestEvent.date | datetime }}
         </p>
         <a class="facebook" href="https://www.facebook.com/events/759572704219214/" target="_blank">
           <img src="img/facebook.png">
@@ -214,6 +215,7 @@
     <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 
     <script src="js/translations.js"></script>
+    <script src="js/events.js"></script>
   <script src="js/vue_slider.js"></script>
   <script src="js/vue_app.js"></script>
 

@@ -57,6 +57,11 @@ a {
     cursor: pointer;
 }
 
+.logo {
+    max-width: 90px;
+    position: absolute;
+}
+
 .event {
     height: 250px;
     width: 500px;
