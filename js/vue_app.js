@@ -4,7 +4,7 @@ var app = new Vue({
     'image-slider': imageSlider
   },
   data: {
-    latestEvent: events[events.length - 1]
+    latestEvent: events[events.length - 1],
   },
   methods: {
     switchLanguage: function(event) {
@@ -32,7 +32,21 @@ var app = new Vue({
         moment.locale('en');
         return moment.format("YYYY/MM/DD, LT");
       }
-
+    },
+    shortenEvent: function(event) {
+      if (Vue.config.lang === '_de') {
+        return event.date.format("DD.MM") + ", " + event.title.de;
+      } else {
+        event.date.locale('en');
+        return event.date.format("MM/DD") + ", " + event.title.en;
+      }
+    }
+  },
+  computed: {
+    registerEvents: function() {
+      return events.filter(function (row) {
+        return row.registration;
+      });
     }
   }
 });

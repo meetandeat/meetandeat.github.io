@@ -132,8 +132,8 @@
           <div class="row">
             <div class="medium-6 columns">
               <label for="event">Event:</label>
-              <select id="event">
-                <option>20.03., Persian dinner</option>
+              <select id="event" v-for="event in registerEvents">
+                <option :value="event.id">{{ event|shortenEvent }}</option>
               </select>
             </div>
             <div class="medium-6 columns">
@@ -170,7 +170,7 @@
       </div>
     </div>
 
-    <div class="full map" id="map">
+    <div class="flex-video" id="map">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.9758579451973!2d13.397341451594382!3d52.570047840172066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85241e487e861%3A0x1ea846f8cdf7151c!2sStadtteilzentrum+Pankow!5e0!3m2!1sde!2sde!4v1486855142684"
               width="1825"
               height="400"
