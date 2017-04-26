@@ -11,6 +11,6 @@ var events = [
             de: "Kochabend Dominikanische Republik",
             en: "Dinner Dominican Republic"
         },
-        date: moment('2017-04-02 20:00:00')
+        date: moment('2017-04-28 20:00:00')
     }
 ];

@@ -124,6 +124,10 @@ a {
     margin-bottom: -40px;
 }
 
+.reservation .row {
+    background-color: white;
+}
+
 .headline-reservation {
     background: #FF993B;
     color: #0a0a0a;
