@@ -115,6 +115,10 @@ a {
     padding: 10px;
 }
 
+.headline h2 {
+    line-height: 80px;
+}
+
 .headline-about {
     color: #FF993B;
     background-color: rgba(0,0,0,0.8);
@@ -193,4 +197,13 @@ button.button {
 
 #map iframe.clicked {
     pointer-events: auto;
+}
+
+.reservation-form .row,
+.reservation-form button {
+    margin: 10px 0;
+}
+
+.reservation-form label {
+    padding: 10px 0;
 }

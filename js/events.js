@@ -1,6 +1,6 @@
 var events = [
     {
-        id: 1,
+        id: 759572704219214,
         title: {
             de: "Persischer Kochabend",
             en: "Persian Dinner"
@@ -9,7 +9,7 @@ var events = [
         registration: false
     },
     {
-        id: 2,
+        id: 1473929532651959,
         title: {
             de: "Kochabend Dominikanische Republik",
             en: "Dinner Dominican Republic"

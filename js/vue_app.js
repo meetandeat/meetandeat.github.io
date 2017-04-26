@@ -15,6 +15,9 @@ var app = new Vue({
       } else {
         Vue.config.lang = '_de';
       }
+    },
+    getEventUrl: function(event) {
+      return "https://www.facebook.com/events/" + event.id + "/";
     }
   },
   filters: {
