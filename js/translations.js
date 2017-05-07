@@ -35,8 +35,8 @@ var locales = {
       'would have been trashed and at the same time discover tastes from all over the world.',
 
       'paragraph2': 'Every event is dedicated to a country: we invite an expert who cooks a traditional meal from their ' +
-      'country for us and gives us an insight into their culinary culture. The guests are welcome to help while preparing' +
-      ' or simply to enjoy the food.',
+      'country for us and gives us an insight into their culinary culture. The guests are welcome to help while preparing ' +
+      'or simply to enjoy the food.',
 
       'paragraph3': 'As we celebrate social equality, having dinner at Meet & Eat is completely free for everyone.',
 
@@ -88,10 +88,10 @@ var locales = {
       'donations': 'Spenden'
     },
     'about': {
-      'paragraph1': 'Jeden Tag werden in Deutschland 30 135 Tonnen Lebensmittel weggeworfen. In einem Jahr summiert sich das' +
-      'zu 11 Millionen Tonnen verschwendeter Lebensmittel.' +
-      'Meet & Eat hat es sich zum Ziel gesetzt, ein Bewusstsein für dieses Thema zu schaffen - indem wir Lebensmittel teilen,' +
-      'die sonst in der Tonne landen würden und gleichzeitig Kulinarisches aus aller Welt zu entdecken.',
+      'paragraph1': 'Jeden Tag werden in Deutschland 30 135 Tonnen Lebensmittel weggeworfen. In einem Jahr summiert sich das ' +
+      'zu 11 Millionen Tonnen verschwendeter Lebensmittel. ' +
+      'Meet & Eat hat es sich zum Ziel gesetzt, ein Bewusstsein für dieses Thema zu schaffen - indem wir Lebensmittel teilen, ' +
+      'die sonst in der Tonne landen würden und gleichzeitig Kulinarisches aus aller Welt zu entdecken. ',
 
       'paragraph2': 'Jedes Event ist einem Land gewidmet: wir laden eine Expertin oder einen Experten ein, die oder der uns ein traditionelles Gericht ' +
       'aus ihrem oder seinem Land zubereitet und uns damit einen Einblick in die geschmackliche Kultur bietet. ' +
