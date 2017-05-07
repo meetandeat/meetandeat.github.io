@@ -11,6 +11,7 @@
 body {
     background-color: #e6e6e6;
     font-family: 'Raleway', sans-serif;
+    color: #222222;
 }
 
 h1, h2, h3, h4 {
@@ -134,7 +135,7 @@ a {
 
 .headline-reservation {
     background: #FF993B;
-    color: #0a0a0a;
+    color: #222222;
 }
 
 .headline-facebook {
@@ -144,7 +145,7 @@ a {
 
 .headline-footer {
     background-color: #e6e6e6;
-    color: #0a0a0a;
+    color: #222222;
 }
 
 .full.gallery {
@@ -152,17 +153,45 @@ a {
 }
 
 footer .footer-links {
-    background-color: #fafafa;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+footer .footer-links ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+footer .footer-links ul li:last-child {
+    border-bottom: none;
 }
 
 button.button {
     font-family: 'Raleway', sans-serif;
+    background-color: #FF993B;
+    color: #fafafa;
+    border-radius: 6px;
+    font-weight: bold;
 }
 
 .button.read-more,
 .button.read-less {
     float: right;
     width: 180px;
+}
+
+.more-text .row {
+    padding: 40px 0;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.more-text .row:last-child {
+    border-bottom: none;
+}
+
+.more-text img {
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .image-container {
@@ -183,6 +212,7 @@ button.button {
 #map {
     padding-bottom: 20%;
     overflow: visible;
+    margin-bottom: 0;
 }
 
 @media all and (max-width: 900px) {
