@@ -16,22 +16,30 @@
   </head>
   <body>
   <div id="app">
-    <nav data-sticky-container>
-      <div class="top-bar" data-sticky data-options="marginTop:0;" style="width: 100%">
+    <nav class="fixed">
+      <div class="top-bar" data-options="marginTop:0;" style="width: 100%">
         <div class="row">
-          <div class="top-bar-left">
-            <ul class="dropdown menu" data-dropdown-menu>
-              <li class="navi-toTop"><img class="logo" src="img/logo.svg" title="Meet & Eat"></li>
-            </ul>
+          <div class="top-bar-title hide-for-medium float-right">
+            <!--<strong>{{ $t('navi.menu') }}</strong>-->
+            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+            <button class="menu-icon dark" type="button" data-toggle></button>
+          </span>
           </div>
-          <div class="top-bar-right">
-            <ul class="menu">
-              <li><a href="#about">{{ $t('navi.about') }}</a></li>
-              <li><a href="#gallery">{{ $t('navi.gallery') }}</a></li>
-              <li><a href="#reservation">{{ $t('navi.reservation') }}</a></li>
-              <li><a href="#information">{{ $t('navi.footer') }}</a></li>
-              <li><a href="#" @click="switchLanguage">de | en</a></li>
-            </ul>
+          <div>
+            <div class="top-bar-left">
+              <ul class="menu">
+                <li class="navi-toTop"><img class="logo" src="img/logo.svg" title="Meet & Eat"></li>
+              </ul>
+            </div>
+            <div class="top-bar-right" id="responsive-menu">
+              <ul class="menu vertical medium-horizontal ">
+                <li><a href="#about">{{ $t('navi.about') }}</a></li>
+                <li><a href="#gallery">{{ $t('navi.gallery') }}</a></li>
+                <li><a href="#reservation">{{ $t('navi.reservation') }}</a></li>
+                <li><a href="#information">{{ $t('navi.footer') }}</a></li>
+                <li><a href="#" @click="switchLanguage">de | en</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -49,7 +57,9 @@
       </div>
     </div>
     <div class="full headline headline-about" id="about">
-      <h2 class="row">{{ $t('headline.about') }}</h2>
+      <div class="row">
+        <h2 class="columns">{{ $t('headline.about') }}</h2>
+      </div>
     </div>
 
     <div class="about">
@@ -78,7 +88,7 @@
 
           <div class="row">
             <div class="medium-6 columns text-center">
-              <img src="http://placekitten.com/g/500/300">
+              <img src="img/stadtteilzentrum.jpg">
             </div>
             <div class="medium-6 columns">
               <h4>Stadtteilzentrum Pankow</h4>
@@ -92,7 +102,7 @@
               <p>{{ $t('about.tafeln') }}</p>
             </div>
             <div class="medium-6 columns text-center">
-              <img src="http://placekitten.com/g/500/300">
+              <img src="img/tafeln.jpg">
             </div>
           </div>
         </div>
@@ -102,7 +112,6 @@
     <div class="full gallery" id="gallery">
       <div class="row">
         <div class="small-12 columns">
-          <!--<img src="http://placekitten.com/g/1200/450">-->
           <image-slider inline-template>
             <div id="image-slider">
               <div class="image-container">
@@ -123,7 +132,9 @@
     </div>
 
     <div class="full headline headline-reservation" id="reservation">
-      <h2 class="row">{{ $t('headline.reservation') }}</h2>
+      <div class="row">
+        <h2 class="columns">{{ $t('headline.reservation') }}</h2>
+      </div>
     </div>
 
     <div class="reservation">
@@ -175,11 +186,11 @@
 
     <div class="full headline headline-facebook">
       <div class="row">
-        <h2 class="small-11 columns">
+        <h2 class="small-9 medium-10 columns">
           {{ $t('headline.facebook') }}
         </h2>
 
-        <div class="small-1 columns text-right">
+        <div class="small-3 medium-2 columns text-right">
           <a href="https://www.facebook.com/Meet-Eat-Berlin-1587727641539571" target="_blank">
             <img src="img/facebook.png">
           </a>
@@ -200,7 +211,9 @@
 
     <footer id="information">
       <div class="full headline headline-footer">
-        <h2 class="row">{{ $t('headline.footer') }}</h2>
+        <div class="row">
+          <h2 class="columns">{{ $t('headline.footer') }}</h2>
+        </div>
       </div>
 
       <div class="full footer-links">

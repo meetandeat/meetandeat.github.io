@@ -34,6 +34,13 @@ a {
     cursor: pointer;
 }
 
+nav.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    top: 0;
+}
+
 .toTop {
     background-color: rgba(63, 63, 63, 0.7);
     border-radius: 6px;
@@ -61,6 +68,7 @@ a {
 .logo {
     max-width: 90px;
     position: absolute;
+    z-index: 20;
 }
 
 .event {
@@ -109,22 +117,23 @@ a {
     height: 500px;
     background-image: url('../img/background.png');
     position: relative;
+    margin-top: 50px;
 }
 
 .full.headline {
-    height: 90px;
-    padding: 10px;
+    min-height: 80px;
 }
 
 .headline h2 {
-    line-height: 80px;
+    padding: 10px 0;
+    margin: 0;
 }
 
 .headline-about {
     color: #FF993B;
     background-color: rgba(0,0,0,0.8);
     border: 1px solid black;
-    top: -90px;
+    top: -80px;
     position: relative;
     margin-bottom: -40px;
 }
@@ -141,6 +150,19 @@ a {
 .headline-facebook {
     background-color: #2A69AE;
     color: #FFFFFF;
+}
+
+.headline .columns {
+    padding: 10px;
+}
+
+.headline-facebook img {
+    min-width: 65px;
+    min-height: 65px;
+
+    width: 65px;
+    height: 65px;
+    margin: 0 10px;
 }
 
 .headline-footer {
@@ -192,6 +214,7 @@ button.button {
 .more-text img {
     max-width: 300px;
     margin: 0 auto;
+    max-height: 225px;
 }
 
 .image-container {
@@ -215,11 +238,6 @@ button.button {
     margin-bottom: 0;
 }
 
-@media all and (max-width: 900px) {
-    #map {
-        padding-bottom: 40%;
-    }
-}
 
 #map iframe {
     pointer-events: none;
@@ -236,4 +254,69 @@ button.button {
 
 .reservation-form label {
     padding: 10px 0;
+}
+
+@media all and (max-width: 900px) {
+    #map {
+        padding-bottom: 40%;
+    }
+
+    .logo {
+        top: 8px;
+    }
+}
+
+@media all and (max-width: 640px) {
+    #responsive-menu {
+        padding-top: 40px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .full.headline {
+        min-height: 50px;
+    }
+
+    .headline-about {
+        top: -50px;
+    }
+
+    .image-container {
+        height: auto;
+    }
+
+    .headline-facebook img {
+        min-width: 35px;
+        min-height: 35px;
+
+        width: 35px;
+        height: 35px;
+    }
+
+    .event {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
+        left: auto;
+        right: auto;
+        top: 15%;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .event p {
+        padding: 0;
+    }
+
+    .event .facebook {
+        position: relative;
+        width: auto;
+    }
+
+    .event .facebook img {
+        width: 90px;
+        padding: 20px;
+        padding-bottom: 0;
+    }
 }

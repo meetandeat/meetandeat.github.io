@@ -1,6 +1,7 @@
 var locales = {
   _en: {
     'navi': {
+      'menu': 'Menu',
       'about': 'About us',
       'gallery': 'Gallery',
       'reservation': 'Reservation',
@@ -59,6 +60,7 @@ var locales = {
   },
   _de: {
     'navi': {
+      'menu': 'Menü',
       'about': 'Über uns',
       'gallery': 'Galerie',
       'reservation': 'Anmeldung',
