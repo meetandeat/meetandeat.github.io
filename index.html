@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" dir="ltr">
+<html class="no-js" lang="de" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -15,243 +15,254 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
   </head>
   <body>
-  <div id="app">
-    <nav class="fixed">
-      <div class="top-bar" data-options="marginTop:0;" style="width: 100%">
-        <div class="row">
-          <div class="top-bar-title hide-for-medium float-right">
-            <!--<strong>{{ $t('navi.menu') }}</strong>-->
-            <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
-            <button class="menu-icon dark" type="button" data-toggle></button>
-          </span>
-          </div>
-          <div>
-            <div class="top-bar-left">
-              <ul class="menu">
-                <li class="navi-toTop"><img class="logo" src="img/logo.svg" title="Meet & Eat"></li>
-              </ul>
+    <div id="app">
+      <nav class="fixed">
+        <div class="top-bar" data-options="marginTop:0;" style="width: 100%">
+          <div class="row">
+            <div class="top-bar-title hide-for-medium float-right">
+              <span data-responsive-toggle="responsive-menu" data-hide-for="medium">
+              <button class="menu-icon dark" type="button" data-toggle></button>
+            </span>
             </div>
-            <div class="top-bar-right" id="responsive-menu">
-              <ul class="menu vertical medium-horizontal ">
-                <li><a href="#about">{{ $t('navi.about') }}</a></li>
-                <li><a href="#gallery">{{ $t('navi.gallery') }}</a></li>
-                <li><a href="#reservation">{{ $t('navi.reservation') }}</a></li>
-                <li><a href="#information">{{ $t('navi.footer') }}</a></li>
-                <li><a href="#" @click="switchLanguage">de | en</a></li>
-              </ul>
+            <div>
+              <div class="top-bar-left">
+                <ul class="menu">
+                    <li class="navi-toTop">
+                      <a href="#">
+                        <img class="logo" src="img/logo.svg" title="Meet & Eat">
+                      </a>
+                    </li>
+                </ul>
+              </div>
+              <div class="top-bar-right" id="responsive-menu">
+                <ul class="menu vertical medium-horizontal ">
+                  <li><a href="#about">{{ $t('navi.about') }}</a></li>
+                  <li><a href="#gallery">{{ $t('navi.gallery') }}</a></li>
+                  <li><a href="#reservation">{{ $t('navi.reservation') }}</a></li>
+                  <li><a href="#information">{{ $t('navi.footer') }}</a></li>
+                  <li><a href="#" @click="switchLanguage">de | en</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <div class="stage">
-      <div class="event">
-        <h1>{{ $t('stage.upcoming_event') }}</h1>
-        <p>
-          {{ latestEvent.title | translateKey }}<br/>
-          {{ latestEvent.date | datetime }}
-        </p>
-        <a class="facebook" :href="getEventUrl(latestEvent)" target="_blank">
-          <img src="img/facebook.png">
-        </a>
-      </div>
-    </div>
-    <div class="full headline headline-about" id="about">
-      <div class="row">
-        <h2 class="columns">{{ $t('headline.about') }}</h2>
-      </div>
-    </div>
-
-    <div class="about">
-      <div class="row">
-        <div class="small-12 columns">
-          <p>{{ $t('about.paragraph1') }}</p>
+      </nav>
+      <div class="stage">
+        <div class="event">
+          <h1>{{ $t('stage.upcoming_event') }}</h1>
           <p>
-            {{ $t('about.paragraph2') }}<br/>
-            {{ $t('about.paragraph3') }}
+            {{ latestEvent.title | translateKey }}<br/>
+            {{ latestEvent.date | datetime }}
           </p>
-          <button class="button read-more">{{ $t('about.read_more') }}</button>
-          <button class="button read-less hide">{{ $t('about.read_less') }}</button>
-        </div>
-
-        <div class="small-12 columns more-text" style="display: none;">
-          <h3 class="primary-color">{{ $t('about.who') }}</h3>
-          <div class="row">
-            <div class="medium-6 columns">
-                <h4>Jana</h4>
-                <p>{{ $t('about.jana') }}</p>
-            </div>
-            <div class="medium-6 columns text-center">
-              <img src="img/jana.png" title="Jana Tichauer"/>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="medium-6 columns text-center">
-              <img src="img/stadtteilzentrum.jpg">
-            </div>
-            <div class="medium-6 columns">
-              <h4>Stadtteilzentrum Pankow</h4>
-              <p>{{ $t('about.stadtteilzentrum') }}</p>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="medium-6 columns">
-              <h4>Berliner Tafel e.V.</h4>
-              <p>{{ $t('about.tafeln') }}</p>
-            </div>
-            <div class="medium-6 columns text-center">
-              <img src="img/tafeln.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="full gallery" id="gallery">
-      <div class="row">
-        <div class="small-12 columns">
-          <image-slider inline-template>
-            <div id="image-slider">
-              <div class="image-container">
-                <div v-for="number in [currentNumber]" transition="fade">
-                  <img :src="images[Math.abs(currentNumber) % images.length]" class="align-middle"
-                      @mouseover="stopRotation"
-                      @mouseout="startRotation"
-                  />
-                </div>
-              </div>
-              <div class="slider-controls">
-                <a @click="prev"><i class="fa fa-chevron-circle-left"></i></a> | <a @click="next"><i class="fa fa-chevron-circle-right"></i></a>
-              </div>
-            </div>
-          </image-slider>
-        </div>
-      </div>
-    </div>
-
-    <div class="full headline headline-reservation" id="reservation">
-      <div class="row">
-        <h2 class="columns">{{ $t('headline.reservation') }}</h2>
-      </div>
-    </div>
-
-    <div class="reservation">
-      <div class="row">
-        <div class="small-12 medium-6 columns reservation-form">
-          <form action="https://enformed.io/w4lz7x6g" method="POST">
-            <div class="row">
-              <div class="medium-6 columns">
-                <label for="event">Event:</label>
-                <select name="event" id="event" v-for="event in registerEvents" required>
-                  <option :value="event|shortenEvent">{{ event|shortenEvent }}</option>
-                </select>
-              </div>
-              <div class="medium-6 columns">
-                <label for="participants">{{ $t('reservation.label.participants') }}</label>
-                <input name="participants" type="number" id="participants" required>
-              </div>
-            </div>
-            <hr/>
-            <div class="row">
-              <div class="large-12 columns">
-                <label for="name">{{ $t('reservation.label.name') }}</label>
-                <input name="name" id="name" type="text" placeholder="Name" required>
-              </div>
-            </div>
-            <hr/>
-            <div class="row">
-              <div class="large-12 columns">
-                <label for="email">{{ $t('reservation.label.email') }}</label>
-                <input name="email" id="email" type="email" placeholder="Email" required>
-              </div>
-            </div>
-            <hr/>
-            <input type="hidden" name="*honeypot" />
-            <input type="hidden" name="*redirect" value="http://meetandeat-berlin.de/" />
-
-            <div class="row">
-              <div class="columns large-12 text-right">
-                <button type="submit" class="button">{{ $t('reservation.label.submit') }}</button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="small-12 medium-6 columns">
-          <img src="img/reservation.png">
-        </div>
-      </div>
-    </div>
-
-    <div class="full headline headline-facebook">
-      <div class="row">
-        <h2 class="small-9 medium-10 columns">
-          {{ $t('headline.facebook') }}
-        </h2>
-
-        <div class="small-3 medium-2 columns text-right">
-          <a href="https://www.facebook.com/Meet-Eat-Berlin-1587727641539571" target="_blank">
+          <a class="facebook" :href="getEventUrl(latestEvent)" target="_blank">
             <img src="img/facebook.png">
           </a>
         </div>
       </div>
-    </div>
-
-    <div class="flex-video" id="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.9758579451973!2d13.397341451594382!3d52.570047840172066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85241e487e861%3A0x1ea846f8cdf7151c!2sStadtteilzentrum+Pankow!5e0!3m2!1sde!2sde!4v1486855142684"
-              width="1825"
-              height="400"
-              frameborder="0"
-              style="border:0"
-              allowfullscreen
-      >
-      </iframe>
-    </div>
-
-    <footer id="information">
-      <div class="full headline headline-footer">
+      <div class="full headline headline-about" id="about">
         <div class="row">
-          <h2 class="columns">{{ $t('headline.footer') }}</h2>
+          <h2 class="columns">{{ $t('headline.about') }}</h2>
         </div>
       </div>
 
-      <div class="full footer-links">
+      <div class="about">
         <div class="row">
-          <div class="small-12 medium-4 columns">
-            <ul class="menu vertical">
-              <li><a href="imprint.html">{{ $t('footer.imprint') }}</a></li>
-              <li><a href="contact.html">{{ $t('footer.contact') }}</a></li>
-              <li><a href="donations.html">{{ $t('footer.donations') }}</a></li>
-            </ul>
+          <div class="small-12 columns">
+            <p>{{ $t('about.paragraph1') }}</p>
+            <p>
+              {{ $t('about.paragraph2') }}<br/>
+              {{ $t('about.paragraph3') }}
+            </p>
+            <button class="button read-more">{{ $t('about.read_more') }}</button>
+            <button class="button read-less hide">{{ $t('about.read_less') }}</button>
           </div>
-          <div class="small-12 medium-4 columns"></div>
-          <div class="small-12 medium-4 columns">
-            <div>{{ $t('footer.supported_by') }}</div>
-            <a class="stadtteilzentrum" href="http://www.stz-pankow.de/" target="_blank">
-              <img width="250" src="img/logo-stadtteilzentrum.png">
-            </a>
-            <a class="logo-tafeln" href="http://www.berliner-tafel.de/berliner-tafel/" target="_blank">
-              <img width="250" src="img/logo-tafeln.png">
+
+          <div class="small-12 columns more-text" style="display: none;">
+            <h3 class="primary-color">{{ $t('about.who') }}</h3>
+            <div class="row">
+              <div class="medium-6 columns">
+                  <h4>Jana</h4>
+                  <p>{{ $t('about.jana') }}</p>
+              </div>
+              <div class="medium-6 columns text-center">
+                <img src="img/jana.png" title="Jana Tichauer"/>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="medium-6 columns text-center">
+                <img src="img/stadtteilzentrum.jpg">
+              </div>
+              <div class="medium-6 columns">
+                <h4>Stadtteilzentrum Pankow</h4>
+                <p>{{ $t('about.stadtteilzentrum') }}</p>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="medium-6 columns">
+                <h4>Berliner Tafel e.V.</h4>
+                <p>{{ $t('about.tafeln') }}</p>
+              </div>
+              <div class="medium-6 columns text-center">
+                <img src="img/tafeln.jpg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="full gallery" id="gallery">
+        <div class="row">
+          <div class="small-12 columns">
+            <image-slider inline-template>
+              <div id="image-slider">
+                <div class="image-container">
+                  <div v-for="number in [currentNumber]" transition="fade">
+                    <img :src="images[Math.abs(currentNumber) % images.length]" class="align-middle"
+                        @mouseover="stopRotation"
+                        @mouseout="startRotation"
+                    />
+                  </div>
+                </div>
+                <div class="slider-controls">
+                  <a @click="prev"><i class="fa fa-chevron-circle-left"></i></a> | <a @click="next"><i class="fa fa-chevron-circle-right"></i></a>
+                </div>
+              </div>
+            </image-slider>
+          </div>
+        </div>
+      </div>
+
+      <div class="full headline headline-reservation" id="reservation">
+        <div class="row">
+          <h2 class="columns">{{ $t('headline.reservation') }}</h2>
+        </div>
+      </div>
+
+      <div class="reservation">
+        <div class="row">
+          <div class="small-12 medium-6 columns reservation-form">
+            <form action="https://enformed.io/w4lz7x6g" method="POST">
+              <div class="row">
+                <div class="medium-6 columns">
+                  <label for="event">Event:</label>
+                  <select name="event" id="event" v-for="event in registerEvents" required>
+                    <option :value="event|shortenEvent">{{ event|shortenEvent }}</option>
+                  </select>
+                </div>
+                <div class="medium-6 columns">
+                  <label for="participants">{{ $t('reservation.label.participants') }}</label>
+                  <input name="participants" type="number" id="participants" required>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label for="name">{{ $t('reservation.label.name') }}</label>
+                  <input name="name" id="name" type="text" placeholder="Name" required>
+                </div>
+              </div>
+              <hr/>
+              <div class="row">
+                <div class="large-12 columns">
+                  <label for="email">{{ $t('reservation.label.email') }}</label>
+                  <input name="email" id="email" type="email" placeholder="Email" required>
+                </div>
+              </div>
+              <hr/>
+              <input type="hidden" name="*honeypot" />
+              <input type="hidden" name="*redirect" value="http://meetandeat-berlin.de/" />
+
+              <div class="row">
+                <div class="columns large-12 text-right">
+                  <button type="submit" class="button">{{ $t('reservation.label.submit') }}</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="small-12 medium-6 columns">
+            <img src="img/reservation.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="full headline headline-facebook">
+        <div class="row">
+          <h2 class="small-9 medium-10 columns">
+            {{ $t('headline.facebook') }}
+          </h2>
+
+          <div class="small-3 medium-2 columns text-right">
+            <a href="https://www.facebook.com/Meet-Eat-Berlin-1587727641539571" target="_blank">
+              <img src="img/facebook.png">
             </a>
           </div>
         </div>
       </div>
-    </footer>
 
-    <div class="toTop"><i class="fa fa-caret-up"></i></div>
-  </div>
+      <div class="flex-video" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2424.9758579451973!2d13.397341451594382!3d52.570047840172066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a85241e487e861%3A0x1ea846f8cdf7151c!2sStadtteilzentrum+Pankow!5e0!3m2!1sde!2sde!4v1486855142684"
+                width="1825"
+                height="400"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <footer id="information">
+        <div class="full headline headline-footer">
+          <div class="row">
+            <h2 class="columns">{{ $t('headline.footer') }}</h2>
+          </div>
+        </div>
+
+        <div class="full footer-links">
+          <div class="row">
+            <div class="small-12 medium-4 columns">
+              <ul class="menu vertical">
+                <li><a href="imprint.html">{{ $t('footer.imprint') }}</a></li>
+                <li><a href="contact.html">{{ $t('footer.contact') }}</a></li>
+                <li><a href="donations.html">{{ $t('footer.donations') }}</a></li>
+              </ul>
+            </div>
+            <div class="small-12 medium-4 columns"></div>
+            <div class="small-12 medium-4 columns">
+              <div>{{ $t('footer.supported_by') }}</div>
+              <a class="stadtteilzentrum" href="http://www.stz-pankow.de/" target="_blank">
+                <img width="250" src="img/logo-stadtteilzentrum.png">
+              </a>
+              <a class="logo-tafeln" href="http://www.berliner-tafel.de/berliner-tafel/" target="_blank">
+                <img width="250" src="img/logo-tafeln.png">
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <div class="toTop"><i class="fa fa-caret-up"></i></div>
+    </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script>
 
     <script src="js/translations.js"></script>
     <script src="js/events.js"></script>
-  <script src="js/vue_slider.js"></script>
-  <script src="js/vue_app.js"></script>
+    <script src="js/vue_slider.js"></script>
+    <script src="js/vue_app.js"></script>
 
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
     <script src="js/app.js"></script>
 
+    <noscript>
+      <style type="text/css">
+        #app {display:none;}
+      </style>
+      <div class="noscriptmsg">
+        You don't have JavaScript enabled.  Please enable Javascript to use this site.
+      </div>
+    </noscript>
   </body>
 </html>

@@ -256,6 +256,14 @@ button.button {
     padding: 10px 0;
 }
 
+.imprint-container {
+    margin-top: 75px;
+}
+
+.menu > li > a {
+    padding: 0;
+}
+
 @media all and (max-width: 900px) {
     #map {
         padding-bottom: 40%;
