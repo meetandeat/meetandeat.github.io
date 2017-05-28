@@ -171,6 +171,13 @@
                 </div>
               </div>
               <hr/>
+              <div class="row">
+                <div class="large-12 columns">
+                  <input name="privacy" id="privacy" type="checkbox" v-model="checkedReservation">
+                  <label for="privacy" v-html="$t('privacy.confirmation')"></label>
+                </div>
+              </div>
+              <hr/>
               <input type="hidden" name="*honeypot" />
               <input type="hidden" name="*redirect" value="http://meetandeat-berlin.de/" />
               <input type="hidden" name="*formname" value="reservation-form" />
@@ -178,7 +185,9 @@
 
               <div class="row">
                 <div class="columns large-12 text-right">
-                  <button type="submit" class="button">{{ $t('reservation.label.submit') }}</button>
+                  <button type="submit" class="button" :disabled="checkedReservation == false">
+                    {{ $t('reservation.label.submit') }}
+                  </button>
                 </div>
               </div>
             </form>
@@ -272,7 +281,13 @@
                 <textarea rows="8" name="message" id="contact-message" class="form-control" required></textarea>
               </div>
 
-              <button type="submit" class="button">{{ $t('contact.submit') }}</button>
+              <div class="form-group">
+                  <input name="privacy" id="privacyContact" type="checkbox" v-model="checkedContact">
+                  <label for="privacyContact" v-html="$t('privacy.confirmation')"></label>
+              </div>
+              <hr/>
+
+              <button type="submit" class="button" :disabled="checkedContact == false">{{ $t('contact.submit') }}</button>
 
               <input type="hidden" name="*formname" value="contact-form" />
               <input type="hidden" name="*honeypot" />

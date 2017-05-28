@@ -5,6 +5,8 @@ var app = new Vue({
   },
   data: {
     latestEvent: events[events.length - 1],
+    checkedReservation: false,
+    checkedContact: false
   },
   methods: {
     switchLanguage: function(event) {

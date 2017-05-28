@@ -87,6 +87,7 @@ var locales = {
       'alternative_sentence': 'You can also write us an e-mail:'
     },
     'privacy': {
+      'confirmation': 'I have read and accepted the <a href="privacy.html" target="_blank">privacy policy.</a>',
       'main': {
         'headline': 'Data Privacy Policy',
         'paragraph1': 'Our website may be used without entering personal information. Different rules may apply to certain services on our site, however, and are explained separately below. We collect personal information from you (e.g. name, address, email address, telephone number, etc.) in accordance with the provisions of German data protection statutes. Information is considered personal if it can be associated exclusively to a specific natural person. The legal framework for data protection may be found in the German Federal Data Protection Act (BDSG) and the Telemedia Act (TMG). The provisions below serve to provide information as to the manner, extent and purpose for collecting, using and processing personal information by the provider.',
@@ -220,6 +221,7 @@ var locales = {
       'alternative_sentence': 'Oder per E-Mail an:'
     },
     'privacy': {
+      'confirmation': 'Ich habe die <a href="privacy.html" target="_blank">Datenschutzbestimmungen</a> gelesen und akzeptiert.',
       'main': {
         'headline': 'Datenschutzerklärung',
         'paragraph1': 'Die Nutzung unserer Seite ist ohne eine Angabe von personenbezogenen Daten möglich. ' +
