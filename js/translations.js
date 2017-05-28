@@ -85,6 +85,51 @@ var locales = {
       'message': 'Your message:',
       'submit': 'Submit',
       'alternative_sentence': 'You can also write us an e-mail:'
+    },
+    'privacy': {
+      'main': {
+        'headline': 'Data Privacy Policy',
+        'paragraph1': 'Our website may be used without entering personal information. Different rules may apply to certain services on our site, however, and are explained separately below. We collect personal information from you (e.g. name, address, email address, telephone number, etc.) in accordance with the provisions of German data protection statutes. Information is considered personal if it can be associated exclusively to a specific natural person. The legal framework for data protection may be found in the German Federal Data Protection Act (BDSG) and the Telemedia Act (TMG). The provisions below serve to provide information as to the manner, extent and purpose for collecting, using and processing personal information by the provider.',
+        'paragraph2': 'Please be aware that data transfer via the internet is subject to security risks and, therefore, complete protection against third-party access to transferred data cannot be ensured.'
+      },
+      'reservation': {
+        'headline': 'Purpose of Reservation',
+        'paragraph1': 'We offer you the opportunity to sign up for our website. The information entered when signing up, as shown in the registration form',
+        'paragraph2': 'is collected and stored solely for use by our website. When signing up for our website, we also store your IP address and the date and time you registered. This serves to protect us in the event a third party improperly and without your knowledge makes use of your data to sign up for our site. None of this information is transferred to third parties. Nor is any of this information matched to any information that may be collected by other components of our website.'
+      },
+      'contact': {
+        'headline': 'Contacting Us',
+        'paragraph1': 'On our website we offer you the opportunity to contact us, either by email and/or by using a contact form. In such event, information provided by the user is stored for the purpose of facilitating communications with the user. No data is transferred to third parties. Nor is any of this information matched to any information that may be collected by other components of our website.'
+      },
+      'mailchimp': {
+        'headline': 'Use of MailChimp',
+        'confirmation': {
+          'headline': 'Newsletter Consent',
+          'paragraph1': 'You will be asked to consent to the use of your personal data to receive our newsletter as follows: ',
+          'paragraph2': '“I have read the privacy policy and I give my consent to data being processed by a service provider located in the United States”.',
+          'paragraph3': 'We use the newsletter to provide you with regular updates about our offers. To receive our newsletter, you will need a valid email address. We will then check the email address entered to ensure that you are actually its owner or if its owner has agreed to receive our newsletter. By registering for the newsletter, we will save your IP address and date and time of registration. This will be used in case a third party misuses your email address to subscribe to our newsletter without your knowledge. ',
+          'paragraph4': 'We will not compare the data collected during newsletter registration with any other data that might be collected by other components of our site. '
+        },
+        'newsletter': {
+          'headline': 'Newsletter by MailChimp',
+          'paragraph1': 'We use MailChimp to send our newsletter to our subscribers. MailChimp is a service provided by The Rocket Science Group, LLC, 512 Means Street, Suite 404, Atlanta, GA 30318, USA. ',
+          'paragraph2': 'The data stored when you registered for the newsletter (email address, name, IP address, and time and date of registration) will be sent to a server operated by The Rocket Science Group in the United States and stored there in accordance with its Safe Harbour Agreement. ',
+          'paragraph3': 'Further information about the data protection offered by MailChimp can be found at: ',
+          'paragraph4': 'You may cancel your newsletter subscription and revoke your consent to the storage of this data at any time with future effect. For instructions to take this step, please refer to the confirmation email and each newsletter.'
+        },
+        'tracking': {
+          'headline': 'Newsletter tracking',
+          'paragraph1': 'Our newsletter includes so-called web bugs that allow us to recognise if and when an email has been opened and which links in the email have been clicked by its recipient. ',
+          'paragraph2': 'This data is stored by us so that we can best align our newsletter to the wishes and interests of our subscribers. Accordingly, the data thus collected is used to send personalised newsletters to each recipient.  ',
+          'paragraph3': 'You will be asked to consent to the use of your personal data as follows:',
+          'paragraph4': '“I agree that my data and my user responses will be stored electronically by newsletter tracking so that I can receive a personalised newsletter. The revocation of the consent to receive the newsletter constitutes a revocation of the consent for the tracking described above.”',
+          'paragraph5': 'By revoking the consent to receive the newsletter, the consent to the aforementioned tracking is revoked. '
+        }
+      },
+      'information': {
+        'headline': 'Information/Cancellation/Deletion',
+        'paragraph1': 'On the basis of the Federal Data Protection Act, you may contact us at no cost if you have questions relating to the collection, processing or use of your personal information, if you wish to request the correction, blocking or deletion of the same, or if you wish to cancel explicitly granted consent. Please note that you have the right to have incorrect data corrected or to have personal data deleted, where such claim is not barred by any legal obligation to retain this data.'
+      }
     }
   },
   _de: {
@@ -173,6 +218,67 @@ var locales = {
       'message': 'Nachricht:',
       'submit': 'Abschicken',
       'alternative_sentence': 'Oder per E-Mail an:'
+    },
+    'privacy': {
+      'main': {
+        'headline': 'Datenschutzerklärung',
+        'paragraph1': 'Die Nutzung unserer Seite ist ohne eine Angabe von personenbezogenen Daten möglich. ' +
+                      'Für die Nutzung einzelner Services unserer Seite können sich hierfür abweichende Regelungen ergeben, die in ' +
+                      'diesem Falle nachstehend gesondert erläutert werden. Ihre personenbezogenen Daten (z.B. Name, Anschrift, ' +
+                      'E-Mail, Telefonnummer, u.ä.) werden von uns nur gemäß den Bestimmungen des deutschen Datenschutzrechts ' +
+                      'verarbeitet. Daten sind dann personenbezogen, wenn sie eindeutig einer bestimmten natürlichen Person' +
+                      'zugeordnet werden können. Die rechtlichen Grundlagen des Datenschutzes finden Sie im Bundesdatenschutzgesetz ' +
+                      '(BDSG) und dem Telemediengesetz (TMG). Nachstehende Regelungen informieren Sie insoweit über die Art, den ' +
+                      'Umfang und Zweck der Erhebung, die Nutzung und die Verarbeitung von personenbezogenen Daten durch den Anbieter',
+        'paragraph2': 'Wir weisen darauf hin, dass die internetbasierte Datenübertragung Sicherheitslücken aufweist, ' +
+                      'ein lückenloser Schutz vor Zugriffen durch Dritte somit unmöglich ist.'
+      },
+      'reservation': {
+        'headline': 'Registrierungsfunktion',
+        'paragraph1': 'Wir bieten Ihnen auf unserer Seite die Möglichkeit, sich dort zu registrieren. Die im Zuge ' +
+                      'dieser Registrierung eingegebenen Daten, die aus der Eingabemaske des Registrierungsformular ' +
+                      'ersichtlich sind ',
+        'paragraph2': 'werden ausschließlich für die Verwendung unseres Angebots erhoben und gespeichert. ' +
+                      'Mit Ihrer Registrierung auf unserer Seite werden wir zudem Ihre IP-Adresse und das Datum sowie '+
+                      'die Uhrzeit Ihrer Registrierung speichern. Dies dient in dem Fall, dass ein Dritter Ihre Daten '+
+                      'missbraucht und sich mit diesen Daten ohne Ihr Wissen auf unserer Seite registriert, als ' +
+                      'Absicherung unsererseits.  Eine Weitergabe an Dritte erfolgt nicht. Ein Abgleich der so ' +
+                      'erhobenen Daten mit Daten, die möglicherweise durch andere Komponenten unserer Seite erhoben ' +
+                      'werden, erfolgt ebenfalls nicht.'
+      },
+      'contact': {
+        'headline': 'Kontaktmöglichkeit',
+        'paragraph1': 'Wir bieten Ihnen auf unserer Seite die Möglichkeit, mit uns per E-Mail und/oder über ein Kontaktformular in Verbindung zu treten. In diesem Fall werden die vom Nutzer gemachten Angaben zum Zwecke der Bearbeitung seiner Kontaktaufnahme gespeichert. Eine Weitergabe an Dritte erfolgt nicht. Ein Abgleich der so erhobenen Daten mit Daten, die möglicherweise durch andere Komponenten unserer Seite erhoben werden, erfolgt ebenfalls nicht.'
+      },
+      'mailchimp': {
+        'headline': 'Einsatz von MailChimp',
+        'confirmation': {
+          'headline': 'Einwilligung Newsletter',
+          'paragraph1': 'In Bezug auf die Verwendung Ihrer personenbezogenen Daten zum Empfang unseres Newsletters werden Sie an gegebener Stelle wie folgt um eine Einwilligung gebeten: ',
+          'paragraph2': '"Ich habe die Datenschutzerklärung zu Kenntnis genommen, insbesondere bin ich damit einverstanden, dass die Datenverarbeitung bei einem Dienstleister in den USA erfolgt.".',
+          'paragraph3': 'Mit dem Newsletter informieren wir in regelmäßigen Abständen über unsere Angebote. Um unseren Newsletter empfangen zu können, benötigen Sie eine gültige E-Mailadresse. Die von Ihnen eingetragene E-Mail-Adresse werden wir dahingehend überprüfen, ob Sie tatsächlich der Inhaber der angegebenen E-Mail-Adresse sind bzw. deren Inhaber den Empfang des Newsletters autorisiert ist. Mit Ihrer Anmeldung zu unserem Newsletter werden wir Ihre IP-Adresse und das Datum sowie die Uhrzeit Ihrer Anmeldung speichern. Dies dient in dem Fall, dass ein Dritter Ihre E-Mail-Adresse missbraucht und ohne Ihr Wissen unseren Newsletter abonniert, als Absicherung unsererseits. ',
+          'paragraph4': 'Ein Abgleich der so erhobenen Daten mit Daten, die möglicherweise durch andere Komponenten unserer Seite erhoben werden, erfolgt ebenfalls nicht. '
+        },
+        'newsletter': {
+          'headline': 'Newsletter per MailChimp',
+          'paragraph1': 'Wir verwenden zum Versand unserer Newsletter die Komponente MailChimp. Bei MailChimp handelt es sich um eine Dienstleistung der Firma The Rocket Science Group, LLC, 512 Means Street, Suite 404, Atlanta, GA 30318, USA. ',
+          'paragraph2': 'Ihre bei der Newsletter Anmeldung gespeicherten Daten (E-Mail-Adresse, ggf. Name, IP-Adresse, Datum sowie die Uhrzeit Ihrer Anmeldung) werden an einen Server der Firma The Rocket Science Group in den USA übertragen und dort unter Beachtung des "Safe Harbor Abkommens" gespeichert. ',
+          'paragraph3': 'Weitere Informationen zum Datenschutz bei MailChimp finden Sie unter: ',
+          'paragraph4': 'Das Abonnement dieses Newsletters und damit die Einwilligung in die Speicherung Ihrer Daten können Sie jederzeit für die Zukunft kündigen bzw. widerrufen. Einzelheiten hierzu können Sie der Bestätigungsmail sowie jedem einzelnen Newsletter entnehmen.'
+        },
+        'tracking': {
+          'headline': 'Newsletter-Tracking',
+          'paragraph1': 'Unsere Newsletter enthalten sog. Zählpixel (Web-Bugs), anhand derer wir erkennen können, ob und wann eine E-Mail geöffnet wurde und welchen Links in der E-Mail von dem personalisierten Empfänger gefolgt wurde. ',
+          'paragraph2': 'Diese Daten werden von uns gespeichert, damit wir unsere Newsletter optimal auf die Wünsche und Interessen unserer Abonnenten ausrichten können. Demnach werden die somit erhobenen Daten genutzt, um personalisierte Newsletter an den jeweiligen Empfänger zu versenden.  ',
+          'paragraph3': 'Um Ihre diesbezügliche Einwilligung bitten wir Sie an gegebener Stelle wie folgt:',
+          'paragraph4': '"Ich bin damit einverstanden, dass meine Daten und mein Nutzungsverhalten durch das Newsletter-Tracking elektronisch gespeichert werden um mir einen individualisierten Newsletter zu übersenden. Mit dem widerrufen der Einwilligung zum Erhalt des Newsletters, wird auch die Einwilligung zum vorgenannten Tracking widerrufen."',
+          'paragraph5': 'Mit dem widerrufen der Einwilligung zum Erhalt des Newsletters, wird auch die Einwilligung zum vorgenannten Tracking widerrufen. '
+        }
+      },
+      'information': {
+        'headline': 'Auskunft/Widerruf/Löschung',
+        'paragraph1': 'Sie können sich aufgrund des Bundesdatenschutzgesetzes bei Fragen zur Erhebung, Verarbeitung oder Nutzung Ihrer personenbezogenen Daten und deren Berichtigung, Sperrung, Löschung oder einem Widerruf einer erteilten Einwilligung unentgeltlich an uns wenden. Wir weisen darauf hin, dass Ihnen ein Recht auf Berichtigung falscher Daten oder Löschung personenbezogener Daten zusteht, sollte diesem Anspruch keine gesetzliche Aufbewahrungspflicht entgegenstehen.'
+      }
     }
   }
 };

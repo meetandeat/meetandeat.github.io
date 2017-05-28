@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet & Eat</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/svg+xml" href="img/logo.svg">
+
+  <script src="js/vendor/vue.js"></script>
+  <script src="js/vendor/vue-i18n.min.js"></script>
+</head>
+<body>
+<div id="app" class="imprint">
+  <nav class="fixed">
+    <div class="top-bar" data-options="marginTop:0;" style="width: 100%">
+      <div class="row">
+        <div class="top-bar-title float-right">
+          <a href="#" @click="switchLanguage">de | en</a>
+        </div>
+        <div>
+          <div class="top-bar-left">
+            <ul class="menu">
+              <li class="navi-toTop">
+                <a href="index.html">
+                  <img class="logo" src="img/logo.svg" title="Meet & Eat">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="imprint-container">
+    <div class="row">
+      <div class="columns large-12">
+        <div class="float-right"><a href="index.html">{{ $t('back') }}</a></div>
+        <h2>{{ $t('privacy.main.headline') }}</h2>
+        <p>{{ $t('privacy.main.paragraph1') }}</p>
+        <p><strong>[Name und Anschrift des Betreibers]</strong></p>
+        <p><strong>[Telefonnummer des Betreibers]</strong></p>
+        <p><strong>[E-Mail des Betreibers]</strong></p>
+        <p>{{ $t('privacy.main.paragraph2') }}</p>
+
+        <h4>{{ $t('privacy.reservation.headline') }}</h4>
+        <p>{{ $t('privacy.reservation.paragraph1') }}</p>
+        <p><strong>[BITTE ERGÄNZEN: NAME, E-MAILADRESSE USW]</strong></p>
+        <p>{{ $t('privacy.reservation.paragraph2') }}</p>
+
+        <h4>{{ $t('privacy.contact.headline') }}</h4>
+        <p>{{ $t('privacy.contact.paragraph1') }}</p>
+
+        <h4>{{ $t('privacy.mailchimp.headline') }}</h4>
+        <h5>{{ $t('privacy.mailchimp.confirmation.headline') }}</h5>
+        <p>{{ $t('privacy.mailchimp.confirmation.paragraph1') }}</p>
+        <p>{{ $t('privacy.mailchimp.confirmation.paragraph2') }}</p>
+        <p>{{ $t('privacy.mailchimp.confirmation.paragraph3') }}</p>
+        <p>{{ $t('privacy.mailchimp.confirmation.paragraph4') }}</p>
+        <h5>{{ $t('privacy.mailchimp.newsletter.headline') }}</h5>
+        <p>{{ $t('privacy.mailchimp.newsletter.paragraph1') }}</p>
+        <p>{{ $t('privacy.mailchimp.newsletter.paragraph2') }}</p>
+        <p>{{ $t('privacy.mailchimp.newsletter.paragraph3') }}</p>
+        <p><a href="http://mailchimp.com/legal/privacy/" target="_blank">http://mailchimp.com/legal/privacy/</a></p>
+        <p>{{ $t('privacy.mailchimp.newsletter.paragraph4') }}</p>
+        <h5>{{ $t('privacy.mailchimp.tracking.headline') }}</h5>
+        <p>{{ $t('privacy.mailchimp.tracking.paragraph1') }}</p>
+        <p>{{ $t('privacy.mailchimp.tracking.paragraph2') }}</p>
+        <p>{{ $t('privacy.mailchimp.tracking.paragraph3') }}</p>
+        <p>{{ $t('privacy.mailchimp.tracking.paragraph4') }}</p>
+        <p>{{ $t('privacy.mailchimp.tracking.paragraph5') }}</p>
+
+        <h3>{{ $t('privacy.information.headline') }}</h3>
+        <p>{{ $t('privacy.information.paragraph1') }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/vendor/foundation.js"></script>
+
+<script src="js/translations.js"></script>
+<script src="js/vue_imprint.js"></script>
+
+<noscript>
+  <style type="text/css">
+    #app {
+      display: none;
+    }
+  </style>
+  <div class="noscriptmsg">
+    You don't have JavaScript enabled. Please enable Javascript to use this site.
+  </div>
+</noscript>
+</body>
+</html>
