@@ -18,13 +18,19 @@ $(".top-bar a").on("click", function (e) {
   e.preventDefault();
 
   var href = $(this).attr("href");
-  console.log(href);
   if (href.length > 0) {
     var body = $("html, body");
     var position = $(href).offset().top - 45;
     body.animate({scrollTop: position}, 1700, 'easeInOutCubic', function () {});
   }
+});
 
+$("body").on("click", function(e) {
+  var menu = $("#responsive-menu");
+
+  if (e.target.id !== "burger" && menu.css('display') === 'block') {
+    menu.css('display', 'none');
+  }
 });
 
 $(".read-more").on("click", function () {
