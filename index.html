@@ -234,9 +234,9 @@
           <div class="row">
             <div class="small-12 medium-4 columns">
               <ul class="menu vertical">
-                <li><a href="imprint.html">{{ $t('footer.imprint') }}</a></li>
                 <li><a data-open="contact-form">{{ $t('footer.contact') }}</a></li>
-                <li><a href="donations.html">{{ $t('footer.donations') }}</a></li>
+                <li><a href="imprint.html">{{ $t('footer.imprint') }}</a></li>
+                <li><a href="privacy.html">{{ $t('privacy.label') }}</a></li>
               </ul>
             </div>
             <div class="small-12 medium-4 columns"></div>
@@ -286,15 +286,16 @@
                   <label for="privacyContact" v-html="$t('privacy.confirmation')"></label>
               </div>
               <hr/>
-
-              <button type="submit" class="button" :disabled="checkedContact == false">{{ $t('contact.submit') }}</button>
+              <div class="form-group text-right">
+                <button type="submit" class="button" :disabled="checkedContact == false">
+                  {{ $t('contact.submit') }}
+                </button>
+              </div>
 
               <input type="hidden" name="*formname" value="contact-form" />
               <input type="hidden" name="*honeypot" />
               <input type="hidden" name="*subject" value="Kontaktanfrage" />
-
             </form>
-            <br>
             <h4>{{ $t('contact.alternative_sentence') }}</h4>
             <img src="img/contact.png"/>
 

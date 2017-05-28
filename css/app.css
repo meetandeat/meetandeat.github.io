@@ -25,6 +25,11 @@ a {
     color: #FF993B;
 }
 
+input[type="checkbox"] {
+    position: relative;
+    top: 4px;
+}
+
 .toTop.show {
     opacity: 0.65;
 }

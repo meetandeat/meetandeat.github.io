@@ -87,6 +87,7 @@ var locales = {
       'alternative_sentence': 'You can also write us an e-mail:'
     },
     'privacy': {
+      'label': 'Privacy Policy',
       'confirmation': 'I have read and accepted the <a href="privacy.html" target="_blank">privacy policy.</a>',
       'main': {
         'headline': 'Data Privacy Policy',
@@ -95,8 +96,9 @@ var locales = {
       },
       'reservation': {
         'headline': 'Purpose of Reservation',
-        'paragraph1': 'We offer you the opportunity to sign up for our website. The information entered when signing up, as shown in the registration form',
-        'paragraph2': 'is collected and stored solely for use by our website. When signing up for our website, we also store your IP address and the date and time you registered. This serves to protect us in the event a third party improperly and without your knowledge makes use of your data to sign up for our site. None of this information is transferred to third parties. Nor is any of this information matched to any information that may be collected by other components of our website.'
+        'paragraph1': 'We offer you the opportunity to sign up for an event. The information entered when signing up, as shown in the registration form',
+        'data': 'name and e-mail address',
+        'paragraph2': 'is collected and stored solely for use by our website. None of this information is transferred to third parties. Nor is any of this information matched to any information that may be collected by other components of our website.'
       },
       'contact': {
         'headline': 'Contacting Us',
@@ -221,6 +223,7 @@ var locales = {
       'alternative_sentence': 'Oder per E-Mail an:'
     },
     'privacy': {
+      'label': 'Datenschutz',
       'confirmation': 'Ich habe die <a href="privacy.html" target="_blank">Datenschutzbestimmungen</a> gelesen und akzeptiert.',
       'main': {
         'headline': 'Datenschutzerklärung',
@@ -236,15 +239,13 @@ var locales = {
                       'ein lückenloser Schutz vor Zugriffen durch Dritte somit unmöglich ist.'
       },
       'reservation': {
-        'headline': 'Registrierungsfunktion',
-        'paragraph1': 'Wir bieten Ihnen auf unserer Seite die Möglichkeit, sich dort zu registrieren. Die im Zuge ' +
-                      'dieser Registrierung eingegebenen Daten, die aus der Eingabemaske des Registrierungsformular ' +
+        'headline': 'Reservierungsfunktion',
+        'paragraph1': 'Wir bieten Ihnen auf unserer Seite die Möglichkeit, sich für ein Event anzumelden. Die im Zuge ' +
+                      'dieser Reservierung eingegebenen Daten, die aus der Eingabemaske des Anmeldungsformulars ' +
                       'ersichtlich sind ',
+        'data': 'Name und E-Mail-Adresse',
         'paragraph2': 'werden ausschließlich für die Verwendung unseres Angebots erhoben und gespeichert. ' +
-                      'Mit Ihrer Registrierung auf unserer Seite werden wir zudem Ihre IP-Adresse und das Datum sowie '+
-                      'die Uhrzeit Ihrer Registrierung speichern. Dies dient in dem Fall, dass ein Dritter Ihre Daten '+
-                      'missbraucht und sich mit diesen Daten ohne Ihr Wissen auf unserer Seite registriert, als ' +
-                      'Absicherung unsererseits.  Eine Weitergabe an Dritte erfolgt nicht. Ein Abgleich der so ' +
+                      'Eine Weitergabe an Dritte erfolgt nicht. Ein Abgleich der so ' +
                       'erhobenen Daten mit Daten, die möglicherweise durch andere Komponenten unserer Seite erhoben ' +
                       'werden, erfolgt ebenfalls nicht.'
       },
