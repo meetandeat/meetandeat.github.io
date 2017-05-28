@@ -27,8 +27,9 @@ $(".top-bar a").on("click", function (e) {
 
 $("body").on("click", function(e) {
   var menu = $("#responsive-menu");
+  var height = $("window").height();
 
-  if (e.target.id !== "burger" && menu.css('display') === 'block') {
+  if (height < 640 && e.target.id !== "burger" && menu.css('display') === 'block') {
     menu.css('display', 'none');
   }
 });
