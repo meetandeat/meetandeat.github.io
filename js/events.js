@@ -15,6 +15,15 @@ var events = [
             en: "Dinner Dominican Republic"
         },
         date: moment('2017-04-28 20:00:00'),
+        registration: false
+    },
+    {
+        id: 249616298848386,
+        title: {
+            de: "Türkischer Kochabend",
+            en: "Turkish Dinner"
+        },
+        date: moment('2017-06-23 20:00:00'),
         registration: true
     }
 ];
