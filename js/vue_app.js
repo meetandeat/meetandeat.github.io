@@ -19,6 +19,10 @@ var app = new Vue({
       }
     },
     getEventUrl: function(event) {
+      if (event.id === 0) {
+        return "https://www.facebook.com/meetandeat.berlin/";
+      }
+      
       return "https://www.facebook.com/events/" + event.id + "/";
     }
   },
