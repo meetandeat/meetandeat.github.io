@@ -24,6 +24,15 @@ var events = [
             en: "Turkish Dinner"
         },
         date: moment('2017-06-23 20:00:00'),
-        registration: true
+        registration: false
+    },
+     {
+        id: 0,
+        title: {
+            de: "Koch gesucht!",
+            en: "Stay tuned"
+        },
+        date: moment('2017-09-15 20:00'),
+        registration: false
     }
 ];
