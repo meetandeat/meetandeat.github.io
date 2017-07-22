@@ -34,5 +34,14 @@ var events = [
         },
         date: moment('2017-09-15 20:00'),
         registration: false
-    }
+    },
+    {
+        id: 107661343204074,
+        title: {
+            de: "Türkischer Kochabend",
+            en: "Turkish Dinner"
+        },
+        date: moment('2017-09-15 20:00:00'),
+        registration: true
+},
 ];
