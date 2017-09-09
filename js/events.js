@@ -38,10 +38,11 @@ var events = [
     {
         id: 107661343204074,
         title: {
-            de: "Türkischer Kochabend",
-            en: "Turkish Dinner"
+            de: "Syrischer Kochabend",
+            en: "Syrian Dinner"
         },
         date: moment('2017-09-15 20:00:00'),
         registration: true
-},
+    },
+        
 ];
