@@ -42,7 +42,16 @@ var events = [
             en: "Syrian Dinner"
         },
         date: moment('2017-09-15 20:00:00'),
-        registration: true
+        registration: false
     },
         
+    {
+        id: 1952178284808690,
+        title: {
+            de: "Türkischer Kochabaned",
+            en: "Turkish Dinner"
+        },
+        date: moment('2017-11-17 20:00:00'),
+        registration: true
+    },
 ];
