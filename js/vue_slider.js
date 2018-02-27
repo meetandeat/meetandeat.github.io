@@ -4,9 +4,12 @@ var imageSlider = {
       images: [
         'img/slider/bread.jpg',
         'img/slider/oil.jpg',
-        'img/slider/spoons.jpg',
-        'img/slider/tomatoes.jpg',
-        'img/slider/veggies.jpg'
+        'img/slider/veggies.jpg',
+        'img/slider/mushroom.png',
+        'img/slider/dessert.png',
+        'img/slider/pepper.png',
+        'img/slider/salad.png',
+        'img/slider/spaghetti.png'
       ],
       currentNumber: 0,
       timer: null
