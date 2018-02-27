@@ -8,7 +8,8 @@ var locales = {
       'footer': 'Additional Information'
     },
     'stage': {
-      'upcoming_event': 'Upcoming Event'
+      'upcoming_event': 'Upcoming Event',
+      'two_years': 'Two Years'
     },
     'headline': {
       'about': 'About the project',
@@ -144,7 +145,8 @@ var locales = {
       'footer': 'Zusätzliche Informationen'
     },
     'stage': {
-      'upcoming_event': 'Nächstes Event'
+      'upcoming_event': 'Nächstes Event',
+      'two_years': 'Zwei Jahre'
     },
     'headline': {
       'about': 'Über das Projekt',
