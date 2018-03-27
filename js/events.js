@@ -52,6 +52,15 @@ var events = [
             en: "Stay tuned"
         },
         date: moment('2017-04-27 20:00'),
+        registration: false
+    },
+        {
+        id: 1605638092891270,
+        title: {
+            de: "Vietnamesischer Kochabend",
+            en: "Vietnamese Dinner"
+        },
+        date: moment('2018-04-27 20:00:00'),
         registration: true
     },
 ];
