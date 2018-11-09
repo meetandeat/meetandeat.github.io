@@ -70,6 +70,14 @@ var events = [
             en: "French Dinner"
         },
         date: moment('2018-06-08 20:00:00'),
+        registration: false
+    },
+     id: 319744335509956,
+        title: {
+            de: "Englischer Kochabend",
+            en: "English Dinner"
+        },
+        date: moment('2018-11-16 20:00:00'),
         registration: true
     },
 ];
