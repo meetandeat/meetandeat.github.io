@@ -54,7 +54,7 @@ var events = [
         date: moment('2017-04-27 20:00'),
         registration: false
     },
-        {
+    {
         id: 1605638092891270,
         title: {
             de: "Vietnamesischer Kochabend",
@@ -63,7 +63,7 @@ var events = [
         date: moment('2018-04-27 20:00:00'),
         registration: false
     },
-            {
+    {
         id: 1974392259542811,
         title: {
             de: "Französischer Kochabend",
@@ -72,7 +72,8 @@ var events = [
         date: moment('2018-06-08 20:00:00'),
         registration: false
     },
-     id: 319744335509956,
+    {
+        id: 319744335509956,
         title: {
             de: "Englischer Kochabend",
             en: "English Dinner"
