@@ -79,6 +79,15 @@ var events = [
             en: "English Dinner"
         },
         date: moment('2018-11-16 20:00:00'),
+        registration: false
+    },
+    {
+        id: 528827117632836,
+        title: {
+            de: "Benefiz-Kochabend",
+            en: "Charity Dinner"
+        },
+        date: moment('2019-02-01 18:00:00'),
         registration: true
     },
 ];
