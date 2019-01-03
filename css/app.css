@@ -269,6 +269,23 @@ button.button {
     padding: 0;
 }
 
+a.benefiz-info {
+    position: absolute;
+    right: 16px;
+    bottom: 77px;
+    font-size: 50px;
+    border: 2px solid #ff993b;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 48px;
+}
+
+a.benefiz-info:hover {
+    border-color: #1468a0;
+}
+
 .benefiz-table {
     border: 0;
     border-collapse: collapse;
@@ -335,6 +352,11 @@ button.button {
     .event .facebook {
         position: relative;
         width: auto;
+    }
+
+    .event .benefiz-info {
+        bottom: 46px;
+        right: 28px;
     }
 
     .event .facebook img {

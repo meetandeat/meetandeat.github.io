@@ -10,6 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" type="image/svg+xml" href="img/logo.svg">
 
+    <meta property="og:url"                content="https://meetandeat-berlin.de/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Meet & Eat" />
+    <meta property="og:description"        content="Meet & Eat ist das internationale Kochprojekt, das es mittlerweile seit fast 3 Jahren gibt. Wir kochen Gerichte aus aller Welt - mit vermeimtlich unverkäuflichen Lebensmitteln." />
+    <meta property="og:image"              content="https://meetandeat-berlin.de/img/logo.svg" />
+
     <script src="js/vendor/vue.js"></script>
     <script src="js/vendor/vue-i18n.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
@@ -54,6 +60,9 @@
             {{ latestEvent.title | translateKey }}<br/>
             {{ latestEvent.date | datetime }}
           </p>
+          <a class="benefiz-info" href="/benefiz.html">
+            <i class="fa fa-info"></i>
+          </a>
           <a class="facebook" :href="getEventUrl(latestEvent)" target="_blank">
             <img src="img/facebook.png">
           </a>
