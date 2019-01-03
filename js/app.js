@@ -15,6 +15,10 @@ $(".toTop, .navi-toTop").on("click", function () {
 });
 
 $(".top-bar a").on("click", function (e) {
+  if (e.target.classList.contains("new-page")) {
+    return;
+  }
+
   e.preventDefault();
 
   var href = $(this).attr("href");
