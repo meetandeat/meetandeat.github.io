@@ -88,6 +88,15 @@ var events = [
             en: "Charity Dinner"
         },
         date: moment('2019-02-01 18:00:00'),
+        registration: false
+    },
+     {
+        id: 340601836592968,
+        title: {
+            de: "Syrisch-palästinensischer Kochabend",
+            en: "Syrian-Palestinian Dinner"
+        },
+        date: moment('2019-05-03 20:00:00'),
         registration: true
     },
 ];
