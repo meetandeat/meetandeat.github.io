@@ -34,8 +34,7 @@ var events = [
         },
         date: moment('2017-09-15 20:00:00'),
         registration: false
-    },
-        
+    },     
     {
         id: 1952178284808690,
         title: {
