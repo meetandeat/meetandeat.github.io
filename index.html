@@ -55,14 +55,11 @@
       </nav>
       <div class="stage">
         <div class="event">
-          <h1>{{ $t('stage.two_years') }} <img src="img/logo.svg" title="Meet &amp; Eat" class="logo-headline" style="max-width: 90px;"></h1>
+          <h1>{{ $t('stage.upcoming_event') }}</h1>
           <p>
             {{ latestEvent.title | translateKey }}<br/>
             {{ latestEvent.date | datetime }}
           </p>
-          <a class="benefiz-info" href="/benefiz.html">
-            <i class="fa fa-info"></i>
-          </a>
           <a class="facebook" :href="getEventUrl(latestEvent)" target="_blank">
             <img src="img/facebook.png">
           </a>
